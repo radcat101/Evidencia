@@ -1,32 +1,27 @@
 ========================
 BUILD OUTPUT DESCRIPTION
 ========================
+Este archivo es de uso público es portable y puede ejecutarse en cualquier computadora. 
 
-When you build an Java application project that has a main class, the IDE
-automatically copies all of the JAR
-files on the projects classpath to your projects dist/lib folder. The IDE
-also adds each of the JAR files to the Class-Path element in the application
-JAR files manifest file (MANIFEST.MF).
-
-To run the project from the command line, go to the dist folder and
-type the following:
+Para ejecutar el proyecto desde la línea de comandos, vaya a la carpeta dist y
+escriba lo siguiente:
 
 java -jar "Login.jar" 
 
-To distribute this project, zip up the dist folder (including the lib folder)
-and distribute the ZIP file.
+Para distribuir este proyecto, comprima la carpeta dist (incluida la carpeta lib)
+y distribuir el archivo ZIP.
 
-Notes:
+Notas:
 
-* If two JAR files on the project classpath have the same name, only the first
-JAR file is copied to the lib folder.
-* Only JAR files are copied to the lib folder.
-If the classpath contains other types of files or folders, these files (folders)
-are not copied.
-* If a library on the projects classpath also has a Class-Path element
-specified in the manifest,the content of the Class-Path element has to be on
-the projects runtime path.
-* To set a main class in a standard Java project, right-click the project node
-in the Projects window and choose Properties. Then click Run and enter the
-class name in the Main Class field. Alternatively, you can manually type the
-class name in the manifest Main-Class element.
+* Si dos archivos JAR en la ruta de clase del proyecto tienen el mismo nombre,
+El archivo JAR se copia en la carpeta lib.
+* Solo los archivos JAR se copian en la carpeta lib.
+Si la ruta de clase contiene otros tipos de archivos o carpetas, estos archivos (carpetas)
+no se copian.
+* Si una biblioteca en la ruta de clase de los proyectos también tiene un elemento Class-Path
+especificado en el manifiesto, el contenido del elemento Class-Path tiene que estar en
+la ruta de ejecución de los proyectos.
+* Para establecer una clase principal en un proyecto Java estándar, haga clic con el botón derecho en el nodo del proyecto
+en la ventana Proyectos y elija Propiedades. A continuación, haga clic en Ejecutar e introduzca el
+nombre de clase en el campo Clase principal. Alternativamente, puede escribir manualmente el
+nombre de clase en el elemento de clase principal del manifiesto.
